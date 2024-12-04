@@ -2,7 +2,7 @@ from tavily import TavilyClient
 import gradio as gr
 from langchain_ollama import ChatOllama
 llm=ChatOllama(model="llama3.2:1b")
-tavily_client=TavilyClient(api_key="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")
+tavily_client=TavilyClient(api_key="your-api-key")
 response_text = "An unexpected error occurred. Please try again later."
 def ai_chat(query,chat_history):
     if not query.strip():
